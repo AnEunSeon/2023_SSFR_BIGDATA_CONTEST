@@ -1,0 +1,34 @@
+
+```{r}
+library('tidyverse')
+library('data.table')
+library('dplyr')
+```
+
+```{r}
+df=fread('C:/Users/EunSeon/Downloads/class_train.csv')
+```
+
+
+```{r}
+fct_col<-c('직전3년간사고건수','운전자한정특별약관')
+df<-df %>% mutate(across(all_of(fct_col),as.factor))
+```
+
+```{r}
+model=glm(고위험~.,family=binomial,data=df)
+```
+
+```{r}
+summary(model)
+```
+
+```{r}
+df<-df %>% select(c(피보험자연령대,피보험자성별,국산구분,가입경력,차량가입금액,영상기록장치특약가입,마일리지약정_가입여부,차종,고경력운전자,직전3년간사고건수,운전자한정특별약관,고위험))
+```
+
+
+```{r}
+model=glm(고위험~.,family=binomial,data=df)
+summary(model)
+```
