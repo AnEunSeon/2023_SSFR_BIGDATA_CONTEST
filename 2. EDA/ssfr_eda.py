@@ -11,11 +11,6 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 
 
-# In[3]:
-
-
-df=pd.read_csv('C:/Users/EunSeon/Downloads/dataset.csv')
-
 
 # In[4]:
 
