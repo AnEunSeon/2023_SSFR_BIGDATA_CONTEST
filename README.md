@@ -56,6 +56,7 @@
 : 예측 모델링 과정에서 다중공선성, 변수 중요도 왜곡 문제를 방지하고자 가입경력 변수 제거
 
 - **사고율 분포 시각화**
+
 ![Image](https://github.com/user-attachments/assets/fe3da506-b7c4-43b0-87d6-4dcfc0e28711)
 
 : 사고율이 0에 치우쳐져 있는 왜도가 높은 분포 형태
@@ -93,7 +94,7 @@
 - **모델 해석**
     - Feature Importance: 예측에 중요하게 작용한 변수 확인
     - SHAP Value: 변수가 예측값에 기여한 정도를 확인
-
+![Image](https://github.com/user-attachments/assets/0d925071-c59b-4844-8b60-c651f253431f)
 
 : 직전3년간사고건수, 피보험자연령대, 차량경과년수, 차종, 마일리지약정거리가 사고율 예측에 많은 영향을 미친 변수임을 확인
 
